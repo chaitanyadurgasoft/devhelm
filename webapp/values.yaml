@@ -33,7 +33,8 @@ volumes:
  name: testvol
  mountPath: /app
 
-nodeSelector: {}
+nodeSelector:
+  hostname: i-0586511af1c2bc036
 persistence:
   enabled: true
   name: db-pvc

@@ -33,3 +33,5 @@ spec:
       - name: {{ .Values.volumes.name }}
         persistentVolumeClaim:
            claimName: {{ .Values.persistence.name }}
+      nodeSelector:
+        kubernetes.io/hostname: {{ .Values.nodeSelector.hostname}}
